@@ -4,10 +4,11 @@ on:
       - v[0-9]+.[0-9]+.[0-9]+
 
 jobs:
-  release_image:
+  release:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - uses: softprops/action-gh-release@v1
       - uses: google-github-actions/setup-gcloud@v0
         with:
           project_id: bitcomplete-oss-q2tc
