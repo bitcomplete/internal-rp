@@ -92,3 +92,11 @@ specified.
 By default OAuth2 Proxy assumes Google is the auth provider. For more details
 About OAuth2 Proxy see their [provider configuration
 docs](https://oauth2-proxy.github.io/oauth2-proxy/docs/configuration/oauth_provider).
+
+## Release process
+
+Make sure that the git repo is clean and up to date with origin/main. Then run:
+
+```
+(read -r v && git tag -a v$v -m v$v && git push origin v$v)
+```
