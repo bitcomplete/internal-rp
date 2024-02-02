@@ -6,7 +6,7 @@ server {
 
 server {
   listen ${PORT};
-  server_name ${ROOT_DOMAIN};
+  server_name ${DASHBOARD_DOMAIN};
 
   location /oauth2/ {
     proxy_pass       http://127.0.0.1:4180;

@@ -1,7 +1,8 @@
-# Required environment variables:
+# Environment variables:
 #
 # PORT
 # ROOT_DOMAIN
+# DASHBOARD_DOMAIN (optional: defaults to $ROOT_DOMAIN)
 # SERVICE_i
 # BACKEND_i
 # BUCKET_PREFIX_i

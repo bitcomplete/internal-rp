@@ -6,7 +6,7 @@ cat << EOF > /usr/share/nginx/html/index.html
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>$ROOT_DOMAIN</title>
+    <title>$ROOT_DOMAIN dashboard</title>
   </head>
   <body>
     <ul>

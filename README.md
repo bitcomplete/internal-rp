@@ -93,6 +93,11 @@ By default OAuth2 Proxy assumes Google is the auth provider. For more details
 About OAuth2 Proxy see their [provider configuration
 docs](https://oauth2-proxy.github.io/oauth2-proxy/docs/configuration/oauth_provider).
 
+**Optional environment variables:**
+
+* `DASHBOARD_DOMAIN` - The domain for the dashboard/OAuth server. Defaults to
+  ROOT_DOMAIN.
+
 ## Release process
 
 Make sure that the git repo is clean and up to date with origin/main. Then run:

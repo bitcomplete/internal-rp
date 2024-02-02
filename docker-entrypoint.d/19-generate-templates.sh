@@ -7,6 +7,9 @@ mkdir -p /etc/nginx/templates
 
 cp templates/root.conf.template /etc/nginx/templates/
 
+# Default dashboard domain to $ROOT_DOMAIN if it was not overridden.
+export DASHBOARD_DOMAIN="${DASHBOARD_DOMAIN:-$ROOT_DOMAIN}"
+
 while true; do
   service=`eval 'echo $SERVICE_'$i`
   [ -z "$service" ] && break

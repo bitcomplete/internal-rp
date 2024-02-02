@@ -14,13 +14,13 @@ server {
 
   location = / {
     auth_request /oauth2/auth;
-    error_page 401 = https://${ROOT_DOMAIN}/oauth2/sign_in?rd=$scheme://$host$request_uri;
+    error_page 401 = https://${DASHBOARD_DOMAIN}/oauth2/sign_in?rd=$scheme://$host$request_uri;
     proxy_pass http://127.0.0.1:4181/${BUCKET_PREFIX}/index.html;
   }
 
   location / {
     auth_request /oauth2/auth;
-    error_page 401 = https://${ROOT_DOMAIN}/oauth2/sign_in?rd=$scheme://$host$request_uri;
+    error_page 401 = https://${DASHBOARD_DOMAIN}/oauth2/sign_in?rd=$scheme://$host$request_uri;
     proxy_pass http://127.0.0.1:4181/${BUCKET_PREFIX}/;
   }
 }
